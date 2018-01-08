@@ -1,11 +1,10 @@
 {
   "name": "sails-auth-it",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Passport-based User Authentication system for sails.js applications.",
   "main": "dist/api/hooks/auth/index.js",
   "scripts": {
-    "test": "mocha --reporter spec --compilers js:babel-core/register",
-    "prepublish": "gulp"
+    "test": "mocha --reporter spec --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -44,14 +43,6 @@
     "passport-http-bearer": "^1.0.1",
     "passport-local": "^1.0.0"
   },
-  "bundledDependencies": [
-    "bcryptjs",
-    "lodash",
-    "passport",
-    "passport-http",
-    "passport-local",
-    "passport-http-bearer"
-  ],
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
@@ -66,12 +57,21 @@
     "supertest": "^2.0.0",
     "waterline-sqlite3": "^1.0.3"
   },
-  "engines": {
-    "node": ">= 0.12",
-    "npm": ">= 2.11"
-  },
   "sails": {
     "isHook": true,
     "hookName": "auth"
-  }
+  },
+  "bundleDependencies": [
+    "bcryptjs",
+    "lodash",
+    "passport",
+    "passport-http",
+    "passport-local",
+    "passport-http-bearer"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }
