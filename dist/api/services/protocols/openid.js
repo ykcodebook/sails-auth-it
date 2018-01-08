@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * OpenID Authentication Protocol
  *
@@ -15,8 +17,6 @@
  * @param {Object}   profile
  * @param {Function} next
  */
-'use strict';
-
 module.exports = function (req, identifier, profile, next) {
   var query = {
     identifier: identifier,

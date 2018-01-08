@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Authentication Protocols
  *
@@ -11,12 +13,12 @@
  * is accomodated by having a single `token` object in the Passport model that
  * can contain any combination of tokens issued by the authentication API.
  */
-'use strict';
-
 module.exports = {
   local: require('./local'),
   basic: require('./basic'),
+  bearer: require('./bearer'),
   oauth: require('./oauth'),
   oauth2: require('./oauth2'),
-  openid: require('./openid')
+  openid: require('./openid'),
+  delegated: require('./delegated')
 };

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * OAuth Authentication Protocol
  *
@@ -17,8 +19,6 @@
  * @param {Object}   profile
  * @param {Function} next
  */
-'use strict';
-
 module.exports = function (req, token, tokenSecret, profile, next) {
   var query = {
     identifier: profile.id,

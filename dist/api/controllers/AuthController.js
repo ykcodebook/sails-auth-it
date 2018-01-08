@@ -1,8 +1,8 @@
+'use strict';
+
 /**
  * Authentication Controller
  */
-'use strict';
-
 module.exports = {
 
   /**
@@ -75,9 +75,12 @@ module.exports = {
       }
     }
 
-    sails.services.passport.callback(req, res, function (err, user) {
+    sails.services.passport.callback(req, res, function (err, user, info, status) {
       if (err || !user) {
-        sails.log.warn(user, err);
+        sails.log.warn(user, err, info, status);
+        if (!err && info) {
+          return negotiateError(info);
+        }
         return negotiateError(err);
       }
 

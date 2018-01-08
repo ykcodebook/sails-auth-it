@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Default model configuration
  * (sails.config.models)
@@ -8,8 +10,6 @@
  * For more info on Sails models, see:
  * http://sailsjs.org/#/documentation/concepts/ORM
  */
-
-"use strict";
 
 module.exports.models = {
 

@@ -17,18 +17,17 @@ var errors = {
     'string': 'Error.Passport.Password.Invalid',
     'minLength': 'Error.Passport.Password.Short'
   }
-};
 
-/**
- * SAError
- *
- * Dress up an error to relay authentication/authorisation related errors
- * without revealing sensitive information.
- *
- * @param  {Object} properties
- * @constructor {SAError}
- */
-function SAError(properties) {
+  /**
+   * SAError
+   *
+   * Dress up an error to relay authentication/authorisation related errors
+   * without revealing sensitive information.
+   *
+   * @param  {Object} properties
+   * @constructor {SAError}
+   */
+};function SAError(properties) {
 
   // Call superclass (Error)
   SAError.super_.call(this, properties);

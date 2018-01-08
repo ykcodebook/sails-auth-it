@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Testing environment settings
  *
@@ -9,8 +11,6 @@
  * any private information to this file!
  *
  */
-
-'use strict';
 
 module.exports = {
   log: { level: 'debug' },

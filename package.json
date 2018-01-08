@@ -1,10 +1,11 @@
 {
   "name": "sails-auth-it",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Passport-based User Authentication system for sails.js applications.",
   "main": "dist/api/hooks/auth/index.js",
   "scripts": {
-    "test": "mocha --reporter spec --compilers js:babel-core/register"
+    "test": "mocha --reporter spec --compilers js:babel-core/register",
+    "prepublish": "gulp"
   },
   "repository": {
     "type": "git",
